@@ -58,7 +58,9 @@ For physical retail, the POS system integrates seamlessly with the online infras
 
 ## 4. Complete Working Example
 
-Let me show you how to query Shopify's data models using the current GraphQL Admin API (validated with version 2025-07):```graphql
+Let me show you how to query Shopify's data models using the current GraphQL Admin API (validated with version 2025-07):
+
+```graphql
 # API Version: 2025-07
 # Last verified: September 23, 2025
 # This query demonstrates Shopify's interconnected data model
@@ -127,7 +129,7 @@ query ProductsAndRelationships {
 
 Here's an example of modern theme architecture using sections:
 
-```
+```js
 <!-- sections/product-info.liquid -->
 <!-- This is a modern Shopify section using Online Store 2.0 patterns -->
 

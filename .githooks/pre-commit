@@ -1,0 +1,7 @@
+#!/bin/sh
+set -e
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+python "$REPO_ROOT/scripts/sync_chapters.py"
+# Stage generated files so the commit includes them
+cd "$REPO_ROOT"
+git add index.md content/_index.md content/docs
