@@ -1,0 +1,51 @@
+baseURL = "https://<GITHUB-USER>.github.io/<REPO-NAME>/"
+title = "Shopify Platform Fundamentals"
+theme = "hugo-book"
+
+# Book configuration
+disableKinds = ["taxonomy", "term"]
+defaultContentLanguage = "en"
+enableGitInfo = true
+
+[params]
+  BookTheme = "auto"
+  BookToC = true
+  BookSearch = true
+  BookComments = false
+  BookSection = "docs"
+  BookRepo = "https://github.com/<GITHUB-USER>/<REPO-NAME>"
+  BookCommitPath = "commit"
+  BookEditPath = "edit/main"
+  BookDateFormat = "January 2, 2006"
+  BookMenuBundle = "/menu"
+  description = "A practical Shopify app development handbook covering fundamentals through monetization."
+  author = "Your Name"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    hl_inline = false
+    lineAnchors = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = true
+    noHl = false
+    style = "monokai"
+    tabWidth = 4
+
+[menu]
+  [[menu.after]]
+    name = "GitHub"
+    url = "https://github.com/<GITHUB-USER>/<REPO-NAME>"
+    weight = 10
+  [[menu.after]]
+    name = "Download PDF"
+    url = "#"
+    weight = 20
